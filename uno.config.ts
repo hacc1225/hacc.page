@@ -10,6 +10,13 @@ import presetTheme from 'unocss-preset-theme'
 import { themeConfig } from './src/config.ts'
 
 const { light, dark } = themeConfig.color
+const fontFamily = {
+  title: ['Dancing Script', 'EarlySummer-Subset', 'EarlySummer', 'ui-serif', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
+  navbar: ['STIX Two Text', 'EarlySummer-Subset', 'EarlySummer', 'ui-serif', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
+  time: ['Dancing Script', 'ui-serif', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
+  serif: ['STIX Two Text', 'EarlySummer', 'ui-serif', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
+  sans: ['ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'Noto Sans SC', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
+}
 
 export default defineConfig({
   presets: [
@@ -40,16 +47,25 @@ export default defineConfig({
       caution: 'oklch(50.5% 0.213 27.518 / 0.8)', // red-700
     },
     fontFamily: {
-      title: ['Snell-Black', 'EarlySummer-Subset', 'EarlySummer', 'ui-serif', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
-      navbar: ['STIX-Italic', 'EarlySummer-Subset', 'EarlySummer', 'ui-serif', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
-      time: ['Snell-Bold', 'ui-serif', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
-      serif: ['STIX', 'EarlySummer', 'ui-serif', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
+      title: fontFamily.title,
+      navbar: fontFamily.navbar,
+      time: fontFamily.time,
+      serif: fontFamily.serif,
+      sans: fontFamily.sans,
     },
   },
   rules: [
     ['scrollbar-hidden', {
       'scrollbar-width': 'none',
       '-ms-overflow-style': 'none',
+    }],
+    ['font-navbar', {
+      'font-family': fontFamily.serif.join(','),
+      'font-style': 'italic',
+    }],
+    ['font-time', {
+      'font-family': fontFamily.title.join(','),
+      'font-weight': '700',
     }],
   ],
   shortcuts: {
