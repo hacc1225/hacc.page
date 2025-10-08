@@ -2,9 +2,17 @@
 lang: zh
 ---
 
-Hi~ 我是Hacc，Linux爱好者。
+Hi~ 我是Hacc，[Linux](https://www.kernel.org/linux.html)爱好者。
 
-博主喜欢一些~~便宜的~~灵车硬件，没事就会去小黄鱼或者是群里闲逛，然后开始~~乱~~买灵车，而由于我又菜又爱玩，常常会整一些~~janky的~~活。
+常用的发行版是[Gentoo](https://www.gentoo.org/)、[Arch Linux](https://archlinux.org/)以及[Debian](https://www.debian.org/) / [Ubuntu](https://ubuntu.com/)。
+
+对于桌面和Home lab里性能够的机器来说我喜欢用[Gentoo](https://www.gentoo.org/)，~~虽然源码发行版用起来很费电~~，但胜在自己patch起来方便，对于一些得改改才能点起来的灵车来说十分搭配了。遇到上游新鲜Bug的时候只要API没变就能随便降级，不用担心破坏ABI。而Overlay也使得建立自己的软件源变得十分方便，直接开个Git仓库就行，~~塞起私货来可快乐了。~~
+
+而性能不太够的桌面和Home lab机器，对于博主这种追新党来说偏向于使用[Arch Linux](https://archlinux.org/)，这种家里用的机器就算滚动更新吃到了上游的新鲜Bug炸了也无所谓，~~反正还有一堆二奶机，炸了就坐等上游修。~~
+
+在生产环境这种不想天天炸天天修的场景下，博主偏向于使用[Debian](https://www.debian.org/) / [Ubuntu](https://ubuntu.com/)，这俩更新策略没那么激进，后者还是正儿八经的商业发行版，应该还是比之前提到的那些要靠谱点，~~虽然我也被[Ubuntu](https://ubuntu.com/)坑过不少回了。~~
+
+博主还喜欢一些~~便宜的~~灵车硬件，没事就会去小黄鱼或者是群里闲逛，然后开始~~乱~~买灵车，而由于我又菜又爱玩，常常会整一些~~janky的~~活。
 
 这里主要会写一些折腾过程中所踩过的坑，或者是分享一些奇奇怪怪的灵车软硬件Setup的使用体验。
 
